@@ -9,7 +9,7 @@ public class Main {
     static final char DOT_X = 'X';
     static final char DOT_O = 'O';
 
-
+//TODO add question If user wants to repeat
     public static void main(String[] args) {
         initMap();
         printMap();
@@ -88,7 +88,7 @@ public class Main {
         if (map[y][x] == DOT_EMPTY) return true;
         return false;
     }
-
+//TODO checkWin - try to do this dynamic way, FOR can help
     private static boolean checkWin(char symb) {
         if (map[0][0] == symb && map[0][1] == symb && map[0][2] == symb) return true;
         if (map[1][0] == symb && map[1][1] == symb && map[1][2] == symb) return true;
